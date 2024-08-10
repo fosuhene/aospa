@@ -192,4 +192,5 @@ class ShippingAddress(models.Model):
         return str(self.address)
     
     #trying things out
+    #something cool will be build
     
