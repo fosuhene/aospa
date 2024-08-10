@@ -168,15 +168,7 @@ class OrderItem(models.Model):
     def get_total(self):
         total = self.product_variant.price * self.quantity
         return total
-    
-    @property
-    def imageURL(self):
-        try:
-            url = self.image.url
-        except:
-            url = ''
-        return url
-    
+       
 # Define the Payment model
 class Payment(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='payments')
