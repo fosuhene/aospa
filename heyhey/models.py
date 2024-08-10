@@ -191,4 +191,5 @@ class ShippingAddress(models.Model):
     def __str__(self):
         return str(self.address)
     
-    #another this to be considered later
+    #trying things out
+    
